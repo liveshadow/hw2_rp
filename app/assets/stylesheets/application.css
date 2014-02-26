@@ -35,6 +35,7 @@ h1.title {
 }
 table#movies th.hilite {
   background-color: yellow;
+}
 table#movies {
   margin: 10px;
   border-collapse: collapse;

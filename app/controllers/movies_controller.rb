@@ -8,6 +8,8 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
+    @all_ratings = ['G','PG','PG-13','R','NC-17','NR'] #Array of all possible ratings to reference to
+    @checked = {}                                      #Empty array will be filled with whatever 
 
     if(params[:sort].to_s == 'title')
     	@movies = @movies.sort_by {|mov| mov.title}
